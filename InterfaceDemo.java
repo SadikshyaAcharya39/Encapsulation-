@@ -58,7 +58,7 @@ public class InterfaceDemo implements Shape
         System.out.println("This is a triangle - default method");
     }
 
-    // 3 method are there in interfacedemo class.
+    // 3 method are there in interface demo class.
 
     public static void main(String[] args) {
 
@@ -81,7 +81,7 @@ public class InterfaceDemo implements Shape
 
 
         // Scenario 2
-        Shape shape = new InterfaceDemo(); // Create an object for class and class object is stored in a interface variable
+        Shape shape = new InterfaceDemo(); // Create an object for class and class object is stored in an interface variable
         shape.circle();
         shape.square();
         Shape.rectangle();

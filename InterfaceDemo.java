@@ -54,23 +54,30 @@ public class InterfaceDemo implements Shape
         System.out.println("This is a circle -  abstract method");
     }
 
+    void triangle(){
+        System.out.println("This is a triangle - default method");
+    }
+
     // 3 method are there in interfacedemo class.
 
     public static void main(String[] args) {
 
         // Scenario 1
 
-//        InterfaceDemo  interfaceDemo = new InterfaceDemo();
-//        interfaceDemo.circle(); // abstract method
-//        interfaceDemo.square(); // default method
-//
-//        // Showing error because rectangle belongs to the interface but not directly created in the class.
-//        // We get it from shape interface
-//
-//        // Using interface name. Like we use to access it by Class name.
-//
-//        // Static can directly access from interface.
-//        Shape.rectangle();
+        InterfaceDemo  interfaceDemo = new InterfaceDemo();
+        interfaceDemo.circle(); // abstract method
+        interfaceDemo.square(); // default method
+
+        // Showing error because rectangle belongs to the interface but not directly created in the class.
+        // We get it from shape interface
+
+        // Using interface name. Like we use to access it by Class name.
+
+        // Static can directly access from interface.
+        Shape.rectangle();
+
+        // Can access because this method is from child class
+        interfaceDemo.triangle();
 
 
         // Scenario 2
@@ -78,5 +85,7 @@ public class InterfaceDemo implements Shape
         shape.circle();
         shape.square();
         Shape.rectangle();
+
+//        Shape.triangle(); // No we can't access
     }
 }
